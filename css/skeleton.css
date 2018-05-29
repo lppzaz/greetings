@@ -1,0 +1,39 @@
+* {
+  font-family: 'Lato', Helvetica, sans-serif;
+  color: #FFF;
+  line-height: 1.5;
+
+
+}
+body{
+  padding-left: 150px;
+  color: #000;
+
+}
+h1 {
+  margin-left: 50px;
+  margin-right: 50px;
+  display:inline-block;
+}
+.greetBtn {
+ background-color: #FFC433;
+   display: block;
+   color: green;
+
+
+}
+.resetBtn {
+ background-color: #FFC433;
+   float: right;
+   color: green;
+}
+
+.greetOutput{
+  display: block;
+  margin-top: 200px;
+
+}
+
+textarea{
+  display: block;
+}
