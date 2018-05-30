@@ -112,7 +112,10 @@
 
 }
 
-
+.count{
+  font-size: 150px;
+  float: right;
+}
 /* Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* NOTE
@@ -125,7 +128,8 @@ body {
   line-height: 1.6;
   font-weight: 400;
   font-family: 'Racing Sans One', cursive;
-  color: #FFF; }
+  color: #00FF7F;
+}
 
 
 /* Typography
@@ -175,7 +179,7 @@ input[type="button"] {
   padding: 0 30px;
   color: #555;
   text-align: center;
-  font-size: 11px;
+  font-size: 15px;
   font-weight: 600;
   line-height: 38px;
   letter-spacing: .1rem;
@@ -218,7 +222,7 @@ button.button-primary:focus,
 input[type="submit"].button-primary:focus,
 input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
-  color: #FFF;
+  color: 	#FF6347;
   background-color: #7FFF00;
   border-color: #1EAEDB; }
 
@@ -341,8 +345,7 @@ button,
 .button {
   margin-bottom: 1rem; }
 input,
-.Greetbox {
-  margin-bottom: 5rem; }
+
 textarea,
 select,
 fieldset {

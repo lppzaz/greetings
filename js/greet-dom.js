@@ -1,12 +1,9 @@
-// refences to all the settings input fields
-var callcostElem = document.querySelector('.callCostSetting')
-var smscostElem = document.querySelector('.smsCostSetting')
-var warningElem = document.querySelector('.warningLevelSetting');
-var criticalElem = document.querySelector('.criticalLevelSetting');
+// refences to all the name input fields
+var greetElem = document.querySelector('.Greetbox')
+
 // display elements
-var settingsCallTotal = document.querySelector('.callTotalSettings');
-var settingsSmsTotal = document.querySelector('.smsTotalSettings');
-var settingsTotalElem = document.querySelector('.totalSettings');
+var counters = document.querySelector('.count');
+
 // reference to buttons
-var settingsAddBtn = document.querySelector('.button')
-var updateSettingsBtn = document.querySelector('.updateSettings')
+var greetmeBtn = document.querySelector('.greetBtn')
+var resetmeBtn = document.querySelector('.resetBtn')

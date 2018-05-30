@@ -1,14 +1,13 @@
-function Greet() {
-  var greetCount = 0;
+var greetCount = 0;
 
-  function counter() {
+function counter() {
     return Object.keys(map).length;
   }
 
   function greetMe(name, checkedLanguage) {
     var greet = '';
-
-    if (map[name] === undefined) {
+ 	
+if (map[name] === undefined) {
       map[name] = 0;
     }
     if (checkedLanguage === "English") {
@@ -21,10 +20,12 @@ function Greet() {
       greet = "Goeie dag ";
     }
     return greet + name;
-
-    return {
-    greeter: greetMe,
-    counter: counter,
-    }
   }
-});
+
+
+  return {
+    
+    greetMe,
+    counter,
+  }
+}
