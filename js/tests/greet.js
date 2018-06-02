@@ -1,31 +1,39 @@
-function Greet() {
+function Greet(storedData) {
   var greetCount = 0;
+  var map = storedData || {};
 
   function counter() {
     return Object.keys(map).length;
   }
 
+  function nameMap() {
+    return map
+  }
+
   function greetMe(name, checkedLanguage) {
-    var greet = '';
 
     if (map[name] === undefined) {
       map[name] = 0;
     }
     if (checkedLanguage === "English") {
-      greet = "Hello ";
+      return "Hello " + name;
     }
     if (checkedLanguage === "Xhosa") {
-      greet = "Molo "
+      return "Molo "+ name;
     }
     if (checkedLanguage === "Afrikaans") {
-      greet = "Goeie dag ";
+      return "Goeie dag "+ name;
     }
-    return checkedLanguage+name;
 
-return{
-      greeter: greetMe,
-      counter: counter,
+  }
+  function clear() {
+  map = {}
+  }
+  return {
+    greeter: greetMe,
+    counter,
+    nameMap,
+    clear,
 
-    }
-  }}
-  var what = Greet();
+  }
+}
