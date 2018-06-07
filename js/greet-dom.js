@@ -23,7 +23,7 @@ var greeting = Greet(storedNames)
 function what() {
   var namez = nameInput.value;
 if(namez === undefined || namez===""){
-  greetingz.innerHTML = "no name"
+  greetingz.innerHTML = "error no name"
   return;
 }
 
@@ -36,7 +36,7 @@ if(namez === undefined || namez===""){
     localStorage.setItem('users', JSON.stringify(greeting.nameMap()));
 return;
   }
-  greetingz.innerHTML = "no language"
+  greetingz.innerHTML = "error no language"
 
 }
 function clearData(){

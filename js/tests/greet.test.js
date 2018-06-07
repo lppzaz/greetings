@@ -30,3 +30,17 @@ describe('Tests the functionality of my greetings app', function() {
         assert.equal(greetingz.counter(),0)
       });
     });
+describe('Tests the functionality of my greetings app', function() {
+      it('Checks no name entered error.', function() {
+        var greetingz = Greet()
+	greetingz.greeter("",'English');
+        assert.equal(greetingz.greeter('error no name'))
+      });
+    });
+describe('Tests the functionality of my greetings app', function() {
+      it('Checks no name entered error.', function() {
+        var greetingz = Greet()
+	greetingz.greeter("Cobus",'');
+        assert.equal(greetingz.greeter('error no language'))
+      });
+    });
