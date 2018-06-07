@@ -44,3 +44,13 @@ describe('Tests the functionality of my greetings app', function() {
         assert.equal(greetingz.greeter('error no language'))
       });
     });
+ describe('Tests the functionality of my greetings app', function() {
+          it('Checks if counter is working for capitals versus no capitals', function() {
+            var greetingz = Greet()
+            greetingz.greeter("Cobus",'English');
+            greetingz.greeter("cobus",'English');
+            greetingz.greeter("COBUS",'English');
+            assert.equal(greetingz.counter(),1)
+          });
+        });
+
