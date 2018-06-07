@@ -12,7 +12,7 @@ function Greet(storedData) {
 
   function greetMe(name, checkedLanguage) {
 
-    if (map[name] === undefined) {
+    if (map[name.toLowerCase()] === undefined) {
       map[name] = 0;
     }
     if (checkedLanguage === "English") {
