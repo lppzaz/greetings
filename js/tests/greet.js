@@ -11,8 +11,8 @@ function Greet(storedData) {
   }
 
   function greetMe(name, checkedLanguage) {
-
-    if (map[name.toLowerCase()] === undefined) {
+    name = name.toLowerCase()
+    if (map[name] === undefined) {
       map[name] = 0;
     }
     if (checkedLanguage === "English") {
@@ -24,11 +24,11 @@ function Greet(storedData) {
     if (checkedLanguage === "Afrikaans") {
       return "Goeie dag "+ name;
     }
-
   }
   function clear() {
   map = {}
   }
+
   return {
     greeter: greetMe,
     counter,

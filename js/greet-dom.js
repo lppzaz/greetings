@@ -22,6 +22,11 @@ var greeting = Greet(storedNames)
 
 function what() {
   var namez = nameInput.value;
+if(namez === undefined || namez===""){
+  greetingz.innerHTML = "no name"
+  return;
+}
+
   var checkedRadio = document.querySelector("input[name='Language']:checked");
   if (checkedRadio) {
     var lang = checkedRadio.value;
@@ -29,7 +34,9 @@ function what() {
     greetingz.innerHTML = greeting.greeter(namez, lang);
     counters.innerHTML =  greeting.counter();
     localStorage.setItem('users', JSON.stringify(greeting.nameMap()));
+return;
   }
+  greetingz.innerHTML = "no language"
 
 }
 function clearData(){
